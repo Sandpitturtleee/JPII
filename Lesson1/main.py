@@ -1,16 +1,12 @@
-# This is a sample Python script.
+from Lesson1.model_ai import ModelAI
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    #Zad1
+    model1 = ModelAI.import_model_json(file_name="model.json")
+    print(model1.model_count)
+    print(model1.model_name)
+    print(model1.version)
+    #end
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
